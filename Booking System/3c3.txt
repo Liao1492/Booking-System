@@ -1,0 +1,48 @@
+startNewDay 03-Jan-2021
+
+register 001 helena 
+register 002 jason
+register 003 kit
+
+arrive I1 3D_Scanner
+
+checkout 001 I1
+request 003 I1
+request 002 I1
+
+listItems
+listMembers
+
+cancelRequest 002 I1
+listItems
+listMembers
+
+undo
+listItems
+listMembers
+
+cancelRequest 003 I1
+listItems
+listMembers
+
+undo
+listItems
+listMembers
+
+checkin 001 I1
+listItems
+listMembers
+
+checkout 002 I1
+cancelRequest 003 I1
+cancelRequest 002 I1
+undo
+listItems
+listMembers
+
+checkout 003 I1
+cancelRequest 003 I1
+cancelRequest 002 I1
+
+listItems
+listMembers
